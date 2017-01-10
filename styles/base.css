@@ -1,0 +1,54 @@
+img {
+  max-width: 100%;
+}
+
+
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  /*color: #313131;*/
+  background-color: blue;
+}
+
+header {
+  height: 100px;
+  background: grey;
+}
+
+main {
+  max-width: 100%;
+  margin: 2.5% auto;
+}
+
+footer {
+  clear: both;
+  height: 150px;
+  background: orange;
+}
+
+/*TEXT STYLES (input)
+=======================================*/
+p {
+  font-size: 1em;
+}
+
+article {
+  border-bottom: 2px solid black;
+  margin: 0 2.5%;
+}
+
+/*LINK STYLES
+=======================================*/
+
+a, a:link, a:active {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover, a:focus {
+  color: #29506D;
+}
+
+a:visited {
+  color: #AAA;
+}
