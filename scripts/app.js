@@ -18,3 +18,9 @@ function PortfolioItem (filepath, name) {
   this.year = year;
 }
 console.log('This is a portfolio item')
+
+portfolioItem.all = [];
+
+portfolioItem.prototype.toHtml = function () {
+  let template =
+}
