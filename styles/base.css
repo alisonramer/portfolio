@@ -2,10 +2,10 @@ img {
   max-width: 100%;
 }
 
-
 body {
   line-height: 1.5;
   font-size: 100%;
+  font-family: Arial, Serif;
   /*color: #313131;*/
   background-color: blue;
 }
@@ -23,6 +23,7 @@ main {
 footer {
   clear: both;
   height: 150px;
+  color: white;
   background: orange;
 }
 
@@ -30,6 +31,7 @@ footer {
 =======================================*/
 p {
   font-size: 1em;
+
 }
 
 article {
