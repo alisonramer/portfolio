@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Yana Radenska Portfolio project for Codefellows Code 301 class",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radenska/portfolio.git"
+  },
+  "keywords": [
+    "radenska",
+    "portfolio",
+    "js",
+    "node",
+    "express"
+  ],
+  "author": "radenska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radenska/portfolio/issues"
+  },
+  "homepage": "https://github.com/radenska/portfolio#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

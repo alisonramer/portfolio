@@ -1,0 +1,14 @@
+
+#footer-icons {
+  background-color: purple;
+  display: flex;
+}
+
+#footer-icons li {
+  flex-grow: 3;
+  list-style: none;
+}
+
+@media screen and (min-width: 760px) {
+
+}

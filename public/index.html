@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="reset" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+
+    <script id="article-template" type="text/x-handlebars-template">
+
+        <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+    </article>
+  </script>
+</head>
+
+<body>
+  <header>
+    <section class="heading-group-h1">
+            <h1>
+              Alison Ramer
+            </h1>
+            <h2>Class Portfolio</h2>
+          </section>
+ </header>
+
+  <main>
+
+      <section id="projects" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter Projects by Category --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="tab-content">
+        <h1>Some of my intrests:</h1>
+          <ul>
+            <li>Coding</li>
+            <li>Sharing what I've learned</li>
+            <li>Hanging with my family</li>
+          </ul>
+      </section>
+  </main>
+
+  <footer>
+    <div class="icon-menu" id="icon-menu">
+      <ul id="footer-icons">
+        <li><a href="http://linkedin.com/in/aramer" target="_blank" class="style/icons/linkedin.svg"> LinkedIn</a>
+        <li><a href="http://twitter.com/alisonramer" target="_blank" class="style/icons/twitter.svg"> Twitter</a></li>
+        <li><a href="http://instagram.com/socialchangestudios" target="_blank" class="style/icons/instagram.svg"> Instagram</a></li>
+        <li><a href="http://github.com/" target="_blank" class="style/icons/github"> GitHub</a></li>
+      </ul>
+
+  &copy; 2017 Alison Ramer | Code Fellows  | Blog Project
+
+  </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="/vendor/scripts/handlebars.js"></script>
+    <script src="/vendor/scripts/marked.js"></script>
+    <script src="/scripts/article.js"></script>
+    <script src="/scripts/articleView.js"></script>
+    <script type="text/javascript" src='/scripts/app.js'></script>
+
+</body>
+</html>
