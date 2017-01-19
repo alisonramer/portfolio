@@ -11,6 +11,15 @@
 
     <script id="article-template" type="text/x-handlebars-template">
 
+      <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By <address><a href="{{authorUrl}}">{{author}}</a></address>
+            {{publishStatus}}
+          </div>
+        </header>
+
         <section class="article-body">{{{body}}}</section>
         <a href="#" class="read-on">Read on &rarr;</a>
     </article>
@@ -48,11 +57,13 @@
 
       <section id="about" class="tab-content">
         <h1>Some of my intrests:</h1>
+
           <ul>
             <li>Coding</li>
             <li>Sharing what I've learned</li>
             <li>Hanging with my family</li>
           </ul>
+
       </section>
   </main>
 
