@@ -27,19 +27,24 @@
           </section>
  </header>
 
-  <main>
-
-      <section id="projects" class="tab-content">
-        <div>
-          <ul id="filters">
-            <li>
-              <select id="author-filter">
-                <option value="">-- Filter Projects by Category --</option>
-              </select>
-            </li>
-          </ul>
-        </div>
+<!-- //This part of the DOM is connected to articles.js. -->
+      <main>
+        <section id="articles">
+          <article class="template">
+            <header class="article-header">
+              <h1><a class="project-url" href="">Title</a></h1>
+              <p class="category">category
+              </p>
+            </header>
+            <section class="article-body">
+              <img class="img" src="">
+              </img>
+              <p class="body">body</p>
+              <p class="time">time</p>
+            </section>
+        </article>
       </section>
+      </main>
 
       <section id="about" class="tab-content">
         <h1>Some of my intrests:</h1>
@@ -66,11 +71,14 @@
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <script src="/vendor/scripts/handlebars.js"></script>
-    <script src="/vendor/scripts/marked.js"></script>
-    <script src="/scripts/article.js"></script>
-    <script src="/scripts/articleView.js"></script>
-    <script type="text/javascript" src='/scripts/app.js'></script>
+    <!-- <script src="vendor/scripts/handlebars.js"></script> -->
+    <!-- <script src="vendor/scripts/marked.js"></script> -->
+    <script src="scripts/projectinfo.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
+    <script>
+      articleView.initIndexPage()
+    </script>
 
 </body>
 </html>
