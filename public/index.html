@@ -4,68 +4,111 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="reset" href="styles/reset.css">
+    <<link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
     <script id="article-template" type="text/x-handlebars-template">
+    <script src="https://use.fontawesome.com/b90cff619a.js"></script>
+    <link rel="stylesheet" href="vendors/font-awesome-4.7.0/css/font-awesome.min.css">
 
-      <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+
+      <!-- <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
             By <address><a href="{{authorUrl}}">{{author}}</a></address>
             {{publishStatus}}
           </div>
-        </header>
+        </header> -->
 
-        <section class="article-body">{{{body}}}</section>
-        <a href="#" class="read-on">Read on &rarr;</a>
-    </article>
-  </script>
+        <!-- <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a> -->
+    <!-- </article> -->
+
 </head>
 
 <body>
-  <header>
+  <header class="site-header clearfix">
+
+    </header>
     <section class="heading-group-h1">
             <h1>
-              Alison Ramer
+              Alison Carmel Ramer
             </h1>
             <h2>Class Portfolio</h2>
           </section>
  </header>
 
-<!-- //This part of the DOM is connected to articles.js. -->
-      <main>
-        <section id="articles">
-          <article class="template">
-            <header class="article-header">
-              <h1><a class="project-url" href="">Title</a></h1>
-              <p class="category">category
-              </p>
+      <nav class="main-nav">
+          <!-- Hamburger Menu -->
+            <div class="icon-menu"></div>
+            <ul>
+              <ul>
+                <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+                <li class="tab" data-content="about">About</li>
+                <li><a href="https://github.com/alisonramer">gitHub link</a></li>
+                <li><a href="mailto:alisonramer@gmail.com">email link</a></li>
+              </ul>
+          </nav>
+        </header>
+
+        <main>
+
+          <!-- <section id="articles" class="tab-content">
+            <div>
+              <ul id="filters">
+                <li>
+                  <select id="author-filter">
+                    <option value="">-- Filter by Authors --</option>
+                  </select>
+                </li>
+                <li>
+                  <select id="category-filter">
+                    <option value="">-- Filter by Categories --</option>
+                  </select>
+                </li>
+              </ul>
+            </div> -->
+
+        <!-- //This part of the DOM is connected to articles.js. -->
+        <main>
+        <section id="articles" class="tab-content">
+          <article class="template" data-category="placeholder-category">
+              <header>
+                <header class="article-header">
+                  <h1><a class="project-url" href="">Title</a></h1>
+                  <p class="category">category</p>
+                </header>
+
+              <section class="article-body">
+                <img class="img" src="">
+                </img>
+                <p class="body">body</p>
+                <p class="time">time</p>
+              </section>
+          </article>
+        </section>
+
+
+          <section id="about" class="tab-content">
+            <header class="about-header">
+              <h1>Welcome to my Blog</h1>
             </header>
-            <section class="article-body">
-              <img class="img" src="">
-              </img>
-              <p class="body">body</p>
-              <p class="time">time</p>
+
+            <section>
+              <h1>Some of my interests:</h1>
+              <ul>
+                <li>Coding</li>
+                <li>Sharing what I've learned</li>
+                <li>Hanging with my family</li>
+              </ul>
             </section>
-        </article>
-      </section>
-      </main>
+          </section>
+        </main>
 
-      <section id="about" class="tab-content">
-        <h1>Some of my intrests:</h1>
-
-          <ul>
-            <li>Coding</li>
-            <li>Sharing what I've learned</li>
-            <li>Hanging with my family</li>
-          </ul>
-
-      </section>
-  </main>
 
   <footer>
     <div class="icon-menu" id="icon-menu">
@@ -80,15 +123,21 @@
 
   </div>
 </footer>
+
+  <!-- Vendor Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <!-- <script src="vendor/scripts/handlebars.js"></script> -->
     <!-- <script src="vendor/scripts/marked.js"></script> -->
+    <!-- Model Files -->
     <script src="scripts/projectinfo.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
     <script>
       articleView.initIndexPage()
+      // articleView.handleNavClick();
+      // articleView.handleHamburgerClick();
+
     </script>
 
 </body>

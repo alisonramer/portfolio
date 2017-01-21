@@ -2,13 +2,6 @@
 
 Article.all = [];
 
-// This is our Model constructor. It will take in
-//    our source data from blogArticles and instantiate a
-//    new Object according to this new definition. options is
-//    a placeholder for the object that will ultimately be
-//    passed in. Use all of the properties in blogArticles
-//    to populate the new Article data that we'll use.  */
-
 function Article (options) {
   this.body = options.body;
   this.category = options.category;
@@ -20,7 +13,9 @@ function Article (options) {
 
 Article.prototype.toHtml = function() {
   console.log('toHtml ran')
+
   var $newArticle = $('article.template').clone();
+
   $newArticle.removeClass('template');
   $newArticle.find('.body').html(this.body);
   $newArticle.find('.category').text( this.category);
@@ -30,6 +25,7 @@ Article.prototype.toHtml = function() {
   $newArticle.find('.time').text(this.publishedOn);
   return $newArticle;
 };
+
 
 projects.forEach(function(indProject) {
   Article.all.push(new Article (indProject));
