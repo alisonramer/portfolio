@@ -1,10 +1,13 @@
+
+
+
 .heading-group-h1 h1 {
   text-align: center;
 }
 
 .heading-group-h1 h2 {
   text-align: left;
-  padding-left: 5%;
+  padding-left: 15%;
 }
 
 .main-nav ul {
@@ -13,7 +16,6 @@
   padding: 0;
   list-style: none;
   clear: both;
-
 }
 
 .main-nav:hover ul {
@@ -30,15 +32,20 @@
   text-shadow: 0 0 1.3rem #0f4140;
 }
 
-.tab-content {
+/*TAB CONTENT*/
+
+.tab-content  {
   border: solid 1px orange;
 }
 
 .template {
-  width: 200px;
-  border: solid 1px blue;
   display: none;
-  align-items: center;
+}
+
+.project {
+  border: solid 4px yellow;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #project-url-title {
@@ -56,11 +63,6 @@
   max-height: 200px;
 }
 
-#body {
-  height: 10%;
-  border: solid 1px red;
-
-}
 
 #time {
 

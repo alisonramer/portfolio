@@ -74,19 +74,19 @@
         <!-- //This part of the DOM is connected to articles.js. -->
         <main>
         <section class="tab-content" id="articles">
-
           <article class="template" data-category="placeholder-category">
+            <article class="project">
+
                 <header class="article-header">
                   <h1><a class="project-url" href="">{{Title}}</a></h1>
-                  <p class="category">{{category}}</p>
+                  <p class="category"><b>Type of project:</b> {{category}}</p>
                 </header>
 
-              <section class="article-body">
+
                 <img class="img" src="">
                 </img>
                 <p class="body">{{body}}</p>
-                <p class="time">{{time}}</p>
-              </section>
+                <p class="time"><b>Date completed: </b>{{time}}</p>
           </article>
         </section>
 
@@ -125,7 +125,7 @@
   <!-- Vendor Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-  
+
     <!-- <script src="vendor/scripts/marked.js"></script> -->
     <!-- Model Files -->
     <script src="scripts/projectinfo.js"></script>
