@@ -33,19 +33,17 @@
 <body>
   <header class="site-header clearfix">
 
-    </header>
+  </header>
     <section class="heading-group-h1">
             <h1>
               Alison Carmel Ramer
             </h1>
             <h2>Class Portfolio</h2>
           </section>
- </header>
 
       <nav class="main-nav">
           <!-- Hamburger Menu -->
-            <div class="icon-menu"></div>
-            <ul>
+
               <ul>
                 <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
                 <li class="tab" data-content="about">About</li>
@@ -75,19 +73,19 @@
 
         <!-- //This part of the DOM is connected to articles.js. -->
         <main>
-        <section id="articles" class="tab-content">
+        <section class="tab-content" id="articles">
+
           <article class="template" data-category="placeholder-category">
-              <header>
                 <header class="article-header">
-                  <h1><a class="project-url" href="">Title</a></h1>
-                  <p class="category">category</p>
+                  <h1><a class="project-url" href="">{{Title}}</a></h1>
+                  <p class="category">{{category}}</p>
                 </header>
 
               <section class="article-body">
                 <img class="img" src="">
                 </img>
-                <p class="body">body</p>
-                <p class="time">time</p>
+                <p class="body">{{body}}</p>
+                <p class="time">{{time}}</p>
               </section>
           </article>
         </section>
