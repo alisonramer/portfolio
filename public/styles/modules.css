@@ -1,3 +1,67 @@
-h1 {
+.heading-group-h1 h1 {
   text-align: center;
+}
+
+.heading-group-h1 h2 {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.main-nav ul {
+  padding-bottom: 0.1em;
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+
+}
+
+.main-nav:hover ul {
+  display: block;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-top: 5%
+  margin-right: .4em;
+  font-size: 2em;
+  font-variant: small-caps;
+  padding: .5em .2em;
+  text-shadow: 0 0 1.3rem #0f4140;
+}
+
+.tab-content {
+  border: solid 1px orange;
+}
+
+.template {
+  width: 200px;
+  border: solid 1px blue;
+  display: none;
+  align-items: center;
+}
+
+#project-url-title {
+  height: 100px;
+  border: solid 1px purple;
+  /*align-items: center;*/
+
+}
+
+#category {
+}
+
+#img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#body {
+  height: 10%;
+  border: solid 1px red;
+
+}
+
+#time {
+
 }
