@@ -1,6 +1,6 @@
 'use strict';
 
-Article.all = [];
+var articles = [];
 
 function Article (options) {
   this.body = options.body;
@@ -12,21 +12,15 @@ function Article (options) {
 }
 
 Article.prototype.toHtml = function() {
-  console.log('toHtml ran')
-
-  var $newArticle = $('article.template').clone();
-
-  $newArticle.removeClass('template');
-  $newArticle.find('.body').html(this.body);
-  $newArticle.find('.category').text( this.category);
-  $newArticle.find('.img').attr('src', this.img);
-  $newArticle.find('h1').text(this.name);
-  $newArticle.find('.project-url').attr('href', this.url);
-  $newArticle.find('.time').text(this.publishedOn);
-  return $newArticle;
+ var source = $('#article-template').html();
+ var templateRender = Handlebars.compile(source);
+ return templateRender(this);
 };
 
+projects.forEach(function(ele){
+  articles.push(new Article(ele));
+});
 
-projects.forEach(function(indProject) {
-  Article.all.push(new Article (indProject));
+articles.forEach(function(article) {
+  $('#articles').append(article.toHtml());
 });
