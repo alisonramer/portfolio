@@ -1,6 +1,9 @@
 'use strict';
 
-function articleView = () {
+var articleView = {};
+
+articleView.handleMainNav = function () {
+  articleView.toggleArticleBody();
   $('.main-nav').on('click', '.tab', function() {
     $('.tab-content').hide();//this is going to hide the tab content because the user clicked on a tab.
     var thingClicked = $(this).attr('data-content');
@@ -10,4 +13,17 @@ function articleView = () {
   //
 };
 
-articleView();
+articleView.toggleArticleBody = function () {
+  $('.article-body').hide();
+  $('#articles h2, #articles h3').hide();
+  $('.image').on('click', function(){
+    $(this).siblings('h1, .article-body').toggle();
+  });
+}
+
+articleView.initIndexPage = function () {
+  Article.all.forEach(function(article) {
+    $('#articles').append(article.toHtml());
+  });
+  articleView.handleMainNav();
+}
