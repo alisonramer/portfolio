@@ -17,10 +17,29 @@ Article.prototype.toHtml = function() {
  return templateRender(this);
 };
 
-projects.forEach(function(ele){
-  articles.push(new Article(ele));
-});
+// JSON Loading HTML with AJAX
 
-articles.forEach(function(article) {
-  $('#articles').append(article.toHtml());
-});
+Article.fetchAll = function () {
+  if (localStorage.rawData) {
+    var = parsedData = JSON.parse(localstorage.rawData);
+    Article.loadArticles(parsedData);
+    articleView.initIndexPage();
+  } else {
+    $.getJSON('data/projectinfo.json')
+    .done(function(data, message, xhr) {
+      localStorage.setItem('rawData', JSON.stringify(data));
+      Article.loadArticles(data);
+      articleView.initIndexPage();
+    })
+    .fail(function(err)) {
+      console.error(err);
+    }
+  }
+
+}
+
+Article.loadArticles = function (parsedData) {
+  parsedData.forEach(function(ele) {
+    Article.all.push(new Article(ele));
+  });
+}

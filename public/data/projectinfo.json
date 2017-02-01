@@ -1,6 +1,8 @@
 
 
-[{"name":"Cookie Stand",
+[
+  {
+  "name":"Cookie Stand",
   "url":"https://alisonramer.github.io/cookie_stand/",
   "publishedOn":"2015-11-05",
   "body":"<p>A sample of a front facing retail website with web application that forecasts the cookies sold per location.</p>",
@@ -20,4 +22,5 @@
     "publishedOn":"2015-11-05",
     "body":"<p>Made for a product research team, this site polls <span> users to inform a company's decision on</span><span>what products to include in a merchandise catalog to be available on commuter buses. In addition to the polls, the site displays cumulative results from the polling in both table and graphic format.</span></p>",
     "img":"<img src=\"data/img/busmall.png\">",
-    "category":"polling application"}]
+    "category":"polling application"}
+  ]
