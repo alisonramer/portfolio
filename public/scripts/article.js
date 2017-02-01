@@ -1,6 +1,6 @@
 'use strict';
 
-var articles = [];
+Article.all = [];
 
 function Article (options) {
   this.body = options.body;
@@ -21,21 +21,21 @@ Article.prototype.toHtml = function() {
 
 Article.fetchAll = function () {
   if (localStorage.rawData) {
-    var = parsedData = JSON.parse(localstorage.rawData);
+    var parsedData = JSON.parse(localStorage.rawData);
     Article.loadArticles(parsedData);
     articleView.initIndexPage();
   } else {
     $.getJSON('data/projectinfo.json')
-    .done(function(data, message, xhr) {
+    .done (function(data, message, xhr) {
       localStorage.setItem('rawData', JSON.stringify(data));
       Article.loadArticles(data);
       articleView.initIndexPage();
     })
-    .fail(function(err)) {
+    .fail (function(err)
+    {
       console.error(err);
-    }
+    })
   }
-
 }
 
 Article.loadArticles = function (parsedData) {
