@@ -1,6 +1,8 @@
 'use strict';
 
-var articleView = {};
+(function (module){
+
+  var articleView = {};
 
 articleView.handleMainNav = function () {
   articleView.toggleArticleBody();
@@ -21,9 +23,19 @@ articleView.toggleArticleBody = function () {
   });
 }
 
+  articleView.summaries = function () {
+    $('.articleSummary').append((Article.listName()));
+    $('.categorySummary').append((Article.listCategories()));
+  }
+
 articleView.initIndexPage = function () {
   Article.all.forEach(function(article) {
     $('#articles').append(article.toHtml());
   });
   articleView.handleMainNav();
+  articleView.summaries();
 }
+
+  module.articleView = articleView;
+
+})(window);
