@@ -12,7 +12,7 @@ var projects = [
   { name:"Seattle Adventure",
     url:"https://alisonramer.github.io/seattle_adventure/",
     publishedOn:"2015-11-05",
-    body:"An interactive story book <span>in which the reader learns about different historic and cultural sites in Seattle. This was a collaborative project with three other students in my Codefellows 201 class.",
+    body:"An interactive story book in which the reader learns about different historic and cultural sites in Seattle. This was a collaborative project with three other students in my Codefellows 201 class.",
     img:'<img src="data/img/seattleAdventure.png"></img>',
     category:"game"},
 
