@@ -1,0 +1,21 @@
+{
+  "name": "alison_ramer",
+  "version": "1.0.0",
+  "description": "portfolio json package",
+  "main": "index.js",
+  "scripts": {
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/alisonramer"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "alison ramer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
