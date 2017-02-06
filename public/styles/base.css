@@ -6,6 +6,7 @@ body {
   font-family: Arial, Serif;
   /*color: #313131;*/
   background-color: white;
+  padding: 10%;
 }
 
 header {
@@ -25,8 +26,8 @@ main {
 footer {
   clear: both;
   height: 150px;
-  color: white;
-  background: orange;
+  color: black;
+  background: white;
 }
 
 /*TEXT STYLES (input)
@@ -49,9 +50,9 @@ a, a:link, a:active {
 }
 
 a:hover, a:focus {
-  color: #29506D;
+  color: orange;
 }
 
 a:visited {
-  color: #AAA;
+  color: blue;
 }
