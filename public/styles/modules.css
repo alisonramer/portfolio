@@ -24,7 +24,10 @@
 
 .tab-content {
   border: solid 1px orange;
+  display: flex;
 }
+
+
 
 .template {
   width: 200px;
@@ -52,4 +55,15 @@
   height: 10%;
   border: solid 1px none;
 
+}
+
+
+#footer-icons {
+  background-color: none;
+  display: flex;
+}
+
+#footer-icons li {
+  flex-grow: 3;
+  list-style: none;
 }
